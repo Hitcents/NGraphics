@@ -132,7 +132,17 @@ namespace NGraphics
 			// TODO: Reuse existing children
 		}
 
-		enum ChildType
+        public TextMetrics MeasureText(string text, Font font)
+        {
+            return new TextMetrics();
+        }
+
+        public void DrawRectangle(Rect frame, Size corner, Pen pen = null, Brush brush = null)
+        {
+            DrawRectangle(frame, pen, brush);
+        }
+
+        enum ChildType
 		{
 			Path,
 			Rectangle,

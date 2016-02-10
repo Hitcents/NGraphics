@@ -26,6 +26,7 @@
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -112,9 +113,9 @@
     <Compile Include="..\..\NGraphics\Platforms.cs">
       <Link>Platforms.cs</Link>
     </Compile>
-    <None Include="..\NGraphics.WindowsStore\CanvasCanvas.cs">
+    <Compile Include="..\NGraphics.WindowsStore\CanvasCanvas.cs">
       <Link>CanvasCanvas.cs</Link>
-    </None>
+    </Compile>
     <Compile Include="..\NGraphics.WindowsStore\Direct2DCanvas.cs">
       <Link>Direct2DCanvas.cs</Link>
     </Compile>
